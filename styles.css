@@ -1,0 +1,20 @@
+:root{
+  --bg:#f7fafc;
+  --card:#ffffff;
+  --accent:#2563eb;
+  --error:#dc2626;
+  --success:#16a34a;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:#111;margin:0;padding:24px}
+.container{max-width:520px;margin:24px auto;padding:24px;background:var(--card);border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+h1{margin:0 0 16px;font-size:1.5rem}
+label{display:block;margin-top:12px;font-weight:600}
+input[type="text"],input[type="email"],textarea{width:100%;padding:10px 12px;margin-top:6px;border:1px solid #e6e9ef;border-radius:6px;font-size:0.95rem}
+button{margin-top:16px;padding:10px 14px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer}
+button:hover{opacity:0.95}
+.error{color:var(--error);font-size:0.875rem;margin-top:6px;min-height:1.1em}
+.success{margin-top:18px;padding:12px;border-radius:8px;background:rgba(22,163,74,0.08);color:var(--success);font-weight:600}
+
+@media (max-width:560px){body{padding:12px}.container{padding:18px}}
